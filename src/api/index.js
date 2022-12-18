@@ -37,5 +37,21 @@ export const getProducts = async ({ queryKey }) => {
 
   return data;
 }
+export const getUser = async ({ queryKey }) => {
+  const [urlUser] = queryKey;
+  let data;
+  if (urlUser === "")
+    data = await axios.get(`${URL}/users/all`);
+  else
+    // emial
+    data = await axios.get(`${URL}/users/${urlUser}`);
+    
+  return data;
+}
 
+export const getUserById = async ({ queryKey }) => {
+  const [userId] = queryKey;
+  let data = await axios.get(`${URL}/users/id/${userId}`);
+  return data.data;
+}
 

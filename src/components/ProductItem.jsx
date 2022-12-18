@@ -15,7 +15,7 @@ export default function ProductItem({ product }) {
                 </p>
                 <div className="product-more">
                     <Link to={`/products/id/${product.id}`} className="product-link">
-                        See More ...
+                        See ore ...
                     </Link>
                     
                 </div>

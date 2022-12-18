@@ -1,5 +1,19 @@
 @import 'antd/dist/antd.css';
-
+.likeicon{
+  transition: opacity .25s linear;
+  width:24px;
+}
+.likeicon:hover{
+  background-color:lightblue;
+  
+}
+.iconBox{
+  display: flex;
+  
+}
+.commentnum{
+  margin-left: 16px;
+}
 /* RWD Container */
 .container {
     width: 100%;
@@ -358,6 +372,9 @@ body {
   text-decoration: none;
   align-self: center;
   color: #defd8f;
+}
+.product-link:hover{
+  color:aqua;
 }
 
 /* Footer */

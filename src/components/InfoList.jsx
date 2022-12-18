@@ -14,6 +14,7 @@ export default function InfoList({ infos, isLoading }) {
           xxl={{ span: 32 }}
         >
           <InfoItem info={info} />
+
         </Col>
       ))}
     </Row>
